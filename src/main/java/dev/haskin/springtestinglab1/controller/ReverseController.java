@@ -2,7 +2,6 @@ package dev.haskin.springtestinglab1.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /*
@@ -14,7 +13,7 @@ x Make it return the reverse of that string
  */
 
 @RestController
-@RequestMapping("/reverse")
+//@RequestMapping("/reverse")
 public class ReverseController {
     @GetMapping(consumes = "text/plain")
     String reverseString(@RequestBody String str) {
